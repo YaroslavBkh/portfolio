@@ -13,6 +13,10 @@ p {
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,4 +24,23 @@ body {
   width: 100vw;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(61, 74, 194), rgb(255, 255, 255)) repeat scroll 0% 0%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: stretch;
+}
+
+.navbar ul {
+  display: flex;
+  flex: 1 1;
+}
+
+ul li {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+}
+
+ul li:first-child {
+  margin-right: auto;
 }
