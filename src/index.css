@@ -44,3 +44,37 @@ ul li {
 ul li:first-child {
   margin-right: auto;
 }
+
+.bio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 30vh;
+}
+
+.bio > .avatar {
+  display: inline-block;
+  text-align: center;
+  /* flex: 1 1; */
+  min-width: 8rem;
+  min-height: 8rem;
+  border: 1px solid gray;
+  border-radius: 70px;
+}
+
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex: 1 1 10%;
+}
+
+.intro .name {
+  flex: 1 0 100%;
+}
+
+.intro .occupation {
+  flex: 1 0 100%;
+}
