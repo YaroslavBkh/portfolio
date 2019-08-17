@@ -4,7 +4,7 @@ const Navbar = () => {
 	return (
 		<div className="navbar">
 			<ul>
-				<li>Welcome to CodeAgony's portfolio</li>
+				<li>CodeAgony</li>
 				<li>Bio</li>
 				<li>Projects</li>
 				<li>Get in Touch</li>
