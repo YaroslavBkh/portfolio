@@ -20,18 +20,17 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   min-height: 100vh;
   /* width: 100vw; */
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(61, 74, 194), rgb(255, 255, 255)) repeat scroll 0% 0%;
 }
 
-/* .appWrapper {
+.appWrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-} */
+}
 
 .navbar {
   display: flex;
@@ -56,7 +55,7 @@ ul li:first-child {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-height: 30vh;
+  /* max-height: 30vh; */
 }
 
 .bio > .avatar {
@@ -86,8 +85,6 @@ ul li:first-child {
   flex: 1 0 100%;
 }
 
-.projectItem p {
-  justify-self: flex-end;
-  position: static;
+.projectItem p{
   color: red;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './layout/Navbar';
 import Bio from './layout/Bio';
 import Projects from './layout/projects/Projects';
-import ProjectItem from './layout/projects/ProjectItem';
 
 function App() {
 	return (
@@ -10,7 +9,6 @@ function App() {
 			<Navbar />
 			<Bio />
 			<Projects />
-			<ProjectItem />
 		</div>
 	);
 }
