@@ -10,7 +10,7 @@ const ProjectItem = ({ project }) => {
 			<h5>{liveLink}</h5>
 			<h5>{description}</h5>
 			<h5>{tech}</h5>
-			<p>{screenUrl}</p>
+			<img src={screenUrl} />
 		</div>
 	);
 };
