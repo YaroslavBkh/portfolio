@@ -1,3 +1,7 @@
+:root {
+  --font-narrative: 'Open Sans Condense', sans-serif; 
+}
+
 body,
 h1,
 h2,
@@ -23,6 +27,7 @@ body {
   min-height: 100vh;
   /* width: 100vw; */
   box-sizing: border-box;
+  font-size: 1rem;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(61, 74, 194), rgb(255, 255, 255)) repeat scroll 0% 0%;
 }
 
@@ -32,14 +37,17 @@ body {
   flex-wrap: wrap;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: stretch;
+  font-family: 'Exo 2', sans-serif; 
 }
 
 .navbar ul {
   display: flex;
   flex: 1 1;
+  color: whitesmoke
 }
 
 ul li {
@@ -51,40 +59,115 @@ ul li:first-child {
   margin-right: auto;
 }
 
-.bio {
+
+.banner {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
-  /* max-height: 30vh; */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.bio > .avatar {
-  display: inline-block;
-  text-align: center;
-  /* flex: 1 1; */
-  min-width: 8rem;
-  min-height: 8rem;
-  border: 1px solid gray;
-  border-radius: 70px;
+.avatar {
+  flex: 0 1 10rem;
+  max-width: 10rem;
+  /* border: 1px solid gray;
+  border-radius: 70px; */
+  border: 3px solid whitesmoke;
+  border-bottom: 0;
+}
+
+.avatar img {
+  /* max-width: 15rem; */
+  /* flex: 1 1 10rem; */
+  width: 100%;
+  height: 100%;
 }
 
 .intro {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  flex: 1 1 10%;
+  flex: 2 1 35%;
+  min-width: 14rem;
 }
 
-.intro .name {
-  flex: 1 0 100%;
+.name {
+  flex: 0 100%;
+  padding: 0 1rem 0 1rem;
+  white-space: nowrap;
+  font-family: 'Exo 2', sans-serif;
 }
 
-.intro .occupation {
-  flex: 1 0 100%;
+.occupation {
+  display: inline;
+  flex: 0 100%;
+  padding: 0 1rem 0 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.projectItem p{
+.narrative {
+  margin: 0.5rem;
+  font-family: var(--font-narrative);
+  font-weight: 400
+}
+
+.narrative h4 {
+  text-align: end;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder
+}
+
+.motto-wrap {
+  align-self: center;
+  display: flex;
+  flex: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+
+.motto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'Source Code Pro', monospace;
+  overflow: hidden; 
+  white-space: nowrap; 
+  animation: 
+    typing 3.5s steps(40, end)
+}
+
+.motto span {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+/* Bio */
+ .bio {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  border: 3px solid white;
+  border-radius: 0 0 10px 10px;
+} 
+
+/* Projects */
+/* .projectItem p{
   color: red;
+} */
+
+/* Animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* Media queries */
+@media (max-width: 688px) { 
+  .motto-wrap { 
+    display: none;
+  }
 }
