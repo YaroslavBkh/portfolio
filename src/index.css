@@ -63,7 +63,6 @@ ul li:first-child {
   margin-right: auto;
 }
 
-
 .banner {
   display: flex;
   justify-content: left;
@@ -107,24 +106,6 @@ ul li:first-child {
   font-family: 'Montserrat', sans-serif;
 }
 
-.narrative {
-  margin: 0.5rem;
-  font-size: 1.1rem;
-  font-family: var(--font-narrative);
-  font-weight: 400
-}
-
-.narrative p {
-  text-indent: 2rem;
-}
-
-.narrative h4 {
-  text-align: end;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bolder;
-  margin: 0.5rem;
-}
-
 .motto-wrap {
   align-self: center;
   display: flex;
@@ -151,8 +132,27 @@ ul li:first-child {
   text-align: right;
 }
 
+/* Text */
+.narrative {
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  font-family: var(--font-narrative);
+  font-weight: 400
+}
+
+.narrative p {
+  text-indent: 2rem;
+}
+
+.narrative h4 {
+  text-align: end;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  margin: 0.5rem;
+}
+
 /* Bio */
- .bio {
+ .section {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -194,7 +194,6 @@ blockquote {
   from { width: 0 }
   to { width: 100% }
 }
-
 
 /* Media queries */
 @media (max-width: 688px) { 
