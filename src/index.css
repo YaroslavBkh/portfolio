@@ -134,6 +134,7 @@ ul li:first-child {
   flex-direction: column;
   justify-content: flex-end;
   font-family: 'Source Code Pro', monospace;
+  line-height: 1.5;
   overflow: hidden; 
   white-space: nowrap; 
   animation: 

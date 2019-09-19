@@ -19,9 +19,7 @@ const Banner = () => {
 			<div className="motto-wrap">
 				<p className="motto">
 					<span>Best practices</span>
-					<br />
 					<span>Cutting-edge tech</span>
-					<br />
 					<span>Consistent code for humans</span>
 				</p>
 			</div>
