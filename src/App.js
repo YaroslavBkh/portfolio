@@ -45,17 +45,19 @@ function App() {
 		togglable && toggle(togglable);
 	};
 
+	const props = {
+		dropdown: dropdown,
+		toggleDropdown: toggleDropdown,
+		expand: expand,
+		collapse: collapse
+	};
+
 	return (
 		<div className="appWrapper">
 			<Navbar />
 			<Banner />
-			<Bio
-				dropdown={dropdown}
-				toggleDropdown={toggleDropdown}
-				expand={expand}
-				collapse={collapse}
-			/>
-			{/* <Projects /> */}
+			<Bio {...props} />
+			<Projects {...props} />
 			{/*<Tech />
 			<Footer /> */}
 		</div>
