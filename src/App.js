@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import expand from './assets/icons/expand.png';
+import collapse from './assets/icons/collapse.png';
 import Navbar from './layout/Navbar';
 import Banner from './layout/Banner';
 import Bio from './layout/Bio';
@@ -47,7 +49,12 @@ function App() {
 		<div className="appWrapper">
 			<Navbar />
 			<Banner />
-			<Bio dropdown={dropdown} toggleDropdown={toggleDropdown} />
+			<Bio
+				dropdown={dropdown}
+				toggleDropdown={toggleDropdown}
+				expand={expand}
+				collapse={collapse}
+			/>
 			{/* <Projects /> */}
 			{/*<Tech />
 			<Footer /> */}
