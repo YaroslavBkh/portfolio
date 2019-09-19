@@ -1,5 +1,6 @@
 :root {
-  --font-narrative: 'Open Sans Condense', sans-serif; 
+  --font-narrative: 'Open Sans Condense', sans-serif;
+  --font-header: 'Exo 2', sans-serif;
 }
 
 body,
@@ -100,7 +101,7 @@ ul li:first-child {
   flex: 0 100%;
   padding: 0 1rem 0 1rem;
   white-space: nowrap;
-  font-family: 'Exo 2', sans-serif;
+  font-family: var(--font-header);
 }
 
 .occupation {
@@ -151,11 +152,24 @@ ul li:first-child {
 /* Bio */
  .bio {
   display: flex;
+  flex-direction: column;
   justify-content: left;
   flex-wrap: wrap;
   border: 3px solid white;
   border-radius: 0 0 10px 10px;
 } 
+
+.toggle-icon {
+  width: 1rem;
+  align-self: center;
+  margin-bottom: 0.2rem
+}
+
+.dropdown-text {
+  text-align: center;
+  margin: 0.5rem 0 0.3rem;
+  font-family: var(--font-header)
+}
 
 /* Projects */
 /* .projectItem p{
