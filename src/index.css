@@ -42,6 +42,9 @@ body {
   display: flex;
   justify-content: stretch;
   font-family: 'Exo 2', sans-serif; 
+  position: sticky;
+  top: 0;
+  background: -webkit-linear-gradient(top, rgba(61, 74, 194) 0%, rgba(34,126,229,0.87) 95%, rgba(32,124,229,0.87) 50%);
 }
 
 .navbar ul {
