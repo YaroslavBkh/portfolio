@@ -1,6 +1,7 @@
 :root {
   --font-narrative: 'Open Sans Condense', sans-serif;
   --font-header: 'Exo 2', sans-serif;
+  --font-listing: 'Titillium Web', sans-serif;
 }
 
 body,
@@ -26,7 +27,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* width: 100vw; */
   box-sizing: border-box;
   font-size: 1rem;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(61, 74, 194), rgb(255, 255, 255)) repeat scroll 0% 0%;
@@ -74,15 +74,11 @@ ul li:first-child {
 .avatar {
   flex: 0 1 10rem;
   max-width: 10rem;
-  /* border: 1px solid gray;
-  border-radius: 70px; */
   border: 3px solid whitesmoke;
   border-bottom: 0;
 }
 
 .avatar img {
-  /* max-width: 15rem; */
-  /* flex: 1 1 10rem; */
   width: 100%;
   height: 100%;
 }
@@ -113,14 +109,20 @@ ul li:first-child {
 
 .narrative {
   margin: 0.5rem;
+  font-size: 1.1rem;
   font-family: var(--font-narrative);
   font-weight: 400
+}
+
+.narrative p {
+  text-indent: 2rem;
 }
 
 .narrative h4 {
   text-align: end;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bolder
+  font-weight: bolder;
+  margin: 0.5rem;
 }
 
 .motto-wrap {
@@ -159,16 +161,27 @@ ul li:first-child {
   border-radius: 0 0 10px 10px;
 } 
 
+.bio li {
+  font-family: var(--font-listing)
+}
+
+blockquote {
+  line-height: 1.1;
+}
+
+/* Controls */
 .toggle-icon {
   width: 1rem;
   align-self: center;
-  margin-bottom: 0.2rem
+  margin-bottom: 0.2rem;
+  cursor: pointer;
 }
 
 .dropdown-text {
   text-align: center;
   margin: 0.5rem 0 0.3rem;
-  font-family: var(--font-header)
+  font-family: var(--font-header);
+  cursor: pointer;
 }
 
 /* Projects */
