@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
 	return (
-		<div className="banner">
+		<div className="banner" noncustom="lol">
 			<div className="avatar">
 				<img
 					src="https://avatars3.githubusercontent.com/u/42055200?s=460&v=4"
