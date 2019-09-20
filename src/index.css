@@ -54,12 +54,12 @@ body {
   color: whitesmoke
 }
 
-ul li {
+.navbar ul li {
   font-size: 1.3rem;
   margin: 0.5rem;
 }
 
-ul li:first-child {
+.navbar ul li:first-child {
   margin-right: auto;
 }
 
