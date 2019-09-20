@@ -5,12 +5,12 @@ const ProjectItem = ({ project }) => {
 	const { name, description, tech, liveLink, screenUrl } = project;
 
 	return (
-		<div className="projectItem">
-			<h3>{name}</h3>
-			<h5>{liveLink}</h5>
-			<h5>{description}</h5>
-			<h5>{tech}</h5>
-			<img src={screenUrl} />
+				<h4>Tech used:</h4>
+				<ul>
+					{tech.map(i => (
+						<li key={i}>{i}</li>
+					))}
+				</ul>
 		</div>
 	);
 };
