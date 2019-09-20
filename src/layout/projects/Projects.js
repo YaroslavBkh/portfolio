@@ -8,7 +8,7 @@ const Projects = ({ dropdown, toggleDropdown, expand, collapse }) => {
 			className="toggle-icon"
 			custom="projects"
 			src={dropdown.projects ? collapse : expand}
-			alt="expand"
+			alt="expand and collapse"
 		/>
 	);
 
