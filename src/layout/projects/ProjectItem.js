@@ -7,10 +7,18 @@ const ProjectItem = ({ project }) => {
 	return (
 		<div className="project-item">
 			{/* Set border color based on project name */}
-			<h3 className={`project-name border-${name}`}>
-				<a href={liveLink}>{name}</a>
-				<a className="project-github">GitHub</a>
-			</h3>
+			<div className={`project-name border-${name}`}>
+				<h3>
+					<a href={liveLink}>{name}</a>
+				</h3>
+				<a
+					href={`https://github.com/CodeAgony/${name}`}
+					alt={`to GitHub repository of the ${name} project`}
+					className="project-github"
+				>
+					GitHub
+				</a>
+			</div>
 			<h4 className="project-descr">{description}</h4>
 			<div className="project-tech">
 				<p>Tech used: {tech.join(', ')}</p>
@@ -18,6 +26,7 @@ const ProjectItem = ({ project }) => {
 			<img
 				src={screenUrl}
 				className={`project-scr border-${name} border-${name}-img `}
+				alt="project screenshot"
 			/>
 		</div>
 	);

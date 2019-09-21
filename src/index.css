@@ -179,11 +179,19 @@ blockquote {
 } */
 
 .project-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   grid-area: name;
   background-color: whitesmoke;
   border: 3px solid #6666ff;
   border-right: 1.5;
   border-radius: 10px 10px 0 0;
+}
+
+.project-name a {
+  padding: 0.3rem;
+  font-size: 1.5rem;
 }
 
 .border-mapmybox {
@@ -232,7 +240,7 @@ blockquote {
     "scr scr"
     "descr descr"
     "tech tech";
-  margin: 3rem;
+  margin: 1rem 3rem 2rem 3rem;
 }
 
 .project-item img {
