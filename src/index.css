@@ -199,15 +199,15 @@ blockquote {
   border-radius: 10px 10px 0 0;
 }
 
-.border-mapbox {
+.border-mapmybox {
   border: 3px solid #727174
 }
 
-.border-finder {
+.border-github_finder {
  border: 3px solid #df4a57
 }
 
-.border-keeper {
+.border-contact_keeper {
   border: 3px solid #1c4ba1
 }
 

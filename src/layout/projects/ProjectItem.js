@@ -4,21 +4,10 @@ import PropTypes from 'prop-types';
 const ProjectItem = ({ project }) => {
 	const { name, description, tech, liveLink, screenUrl } = project;
 
-	const setBorder = () => {
-		// Sets border color based on project name. Nice
-		switch (name) {
-			case 'mapmybox':
-				return 'mapbox';
-			case 'github_finder':
-				return 'finder';
-			case 'contact_keeper':
-				return 'keeper';
-		}
-	};
-
 	return (
 		<div className="project-item">
-			<h3 className={`project-name border-${setBorder()}`}>
+			{/* Set border color based on project name */}
+			<h3 className={`project-name border-${name}`}>
 				<a href={liveLink}>{name}</a>
 				<a className="project-github">GitHub</a>
 			</h3>
