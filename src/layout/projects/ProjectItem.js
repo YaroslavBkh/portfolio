@@ -15,7 +15,10 @@ const ProjectItem = ({ project }) => {
 			<div className="project-tech">
 				<p>Tech used: {tech.join(', ')}</p>
 			</div>
-			<img src={screenUrl} className="project-scr" />
+			<img
+				src={screenUrl}
+				className={`project-scr border-${name} border-${name}-img `}
+			/>
 		</div>
 	);
 };

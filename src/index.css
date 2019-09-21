@@ -190,12 +190,24 @@ blockquote {
   border: 3px solid #727174
 }
 
+.border-mapmybox-img {
+  border-top-width: 0px;
+}
+
 .border-github_finder {
  border: 3px solid #df4a57
 }
 
+.border-github_finder-img {
+  border-top-width: 0px;
+}
+
 .border-contact_keeper {
   border: 3px solid #1c4ba1
+}
+
+.border-contact_keeper-img {
+  border-top: 0;
 }
 
 .project-descr {
