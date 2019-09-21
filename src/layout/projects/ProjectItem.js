@@ -11,7 +11,6 @@ const ProjectItem = ({ project }) => {
 				<a href={liveLink}>{name}</a>
 				<a className="project-github">GitHub</a>
 			</h3>
-
 			<h4 className="project-descr">{description}</h4>
 			<div className="project-tech">
 				<p>Tech used: {tech.join(', ')}</p>
