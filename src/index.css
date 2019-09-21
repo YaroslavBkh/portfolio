@@ -185,9 +185,59 @@ blockquote {
 }
 
 /* Projects */
-/* .projectItem p{
-  color: red;
+/* .projects {
+  display: grid;
+  grid-template-columns: minmax(20rem, 1fr) ;
+  grid-template-rows: auto ;
 } */
+
+.project-name {
+  grid-area: name;
+  background-color: whitesmoke;
+  border: 3px solid #6666ff;
+  border-right: 1.5;
+  border-top-left-radius: 10px;
+}
+
+.border-mapbox {
+  border: 3px solid #727174
+}
+
+.project-descr {
+  grid-area: descr;
+}
+
+.project-tech {
+  grid-area: tech;
+}
+
+.project-scr {
+  grid-area: scr;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content min-content 1fr ;
+  grid-template-areas: 
+    "name name"
+    "scr scr"
+    "scr scr"
+    "descr descr"
+    "tech tech";
+  margin: 3rem;
+}
+
+.project-item h3, h4, h5 {
+  display: inline;
+}
+
+.project-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 
 /* Animation */
 @keyframes typing {

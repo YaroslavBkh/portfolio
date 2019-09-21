@@ -5,12 +5,21 @@ const ProjectItem = ({ project }) => {
 	const { name, description, tech, liveLink, screenUrl } = project;
 
 	return (
-				<h4>Tech used:</h4>
-				<ul>
-					{tech.map(i => (
-						<li key={i}>{i}</li>
-					))}
-				</ul>
+		<div className="project-item">
+			<h3
+				className={`project-name border-${
+					name === 'mapmybox' ? 'mapbox' : 'github-finder'
+				}`}
+			>
+				<a href={liveLink}>{name}</a>
+				<a className="project-github">GitHub</a>
+			</h3>
+
+			<h4 className="project-descr">{description}</h4>
+			<div className="project-tech">
+				<p>Tech used: {tech.join(', ')}</p>
+			</div>
+			<img src={screenUrl} className="project-scr" />
 		</div>
 	);
 };
@@ -20,7 +29,7 @@ ProjectItem.propTypes = {
 		name: PropTypes.string.isRequired,
 		description: PropTypes.string.isRequired,
 		liveLink: PropTypes.string.isRequired,
-		tech: PropTypes.string.isRequired,
+		tech: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 		screenUrl: PropTypes.string.isRequired
 	}).isRequired
 };
