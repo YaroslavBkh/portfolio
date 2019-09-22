@@ -50,6 +50,7 @@ body {
   margin-right: auto;
 }
 
+/* Banner */
 .banner {
   display: flex;
   justify-content: left;
@@ -301,5 +302,34 @@ blockquote {
 @media (max-width: 688px) { 
   .motto-wrap { 
     display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .name {
+    white-space: pre-wrap;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .occupation {
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  .avatar {
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 383px) {
+  .name {
+    white-space: pre-wrap;
+  }
+  .avatar {
+    border: 0;
+    margin-top: 0.6rem;
   }
 }
