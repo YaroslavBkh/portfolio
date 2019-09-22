@@ -5,12 +5,30 @@ const ProjectItem = ({ project }) => {
 	const { name, description, tech, liveLink, screenUrl } = project;
 
 	return (
-		<div className="projectItem">
-			<h3>{name}</h3>
-			<h5>{liveLink}</h5>
-			<h5>{description}</h5>
-			<h5>{tech}</h5>
-			<img src={screenUrl} />
+		<div className="project-item">
+			{/* Set border color based on project name */}
+			<div className={`project-name border-${name}`}>
+				<h3>
+					<a href={liveLink}>{name}</a>
+				</h3>
+				<h3 className="tooltip" data-tip={tech}>
+					Tech
+					<span className="tooltiptext">{tech.join(', ')}</span>
+				</h3>
+				<a
+					href={`https://github.com/CodeAgony/${name}`}
+					alt={`to GitHub repository of the ${name} project`}
+					className="project-github"
+				>
+					GitHub
+				</a>
+			</div>
+			<h4 className="project-descr">{description}</h4>
+			<img
+				src={screenUrl}
+				className={`project-scr border-${name} border-${name}-img `}
+				alt="project screenshot"
+			/>
 		</div>
 	);
 };
@@ -20,7 +38,7 @@ ProjectItem.propTypes = {
 		name: PropTypes.string.isRequired,
 		description: PropTypes.string.isRequired,
 		liveLink: PropTypes.string.isRequired,
-		tech: PropTypes.string.isRequired,
+		tech: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 		screenUrl: PropTypes.string.isRequired
 	}).isRequired
 };

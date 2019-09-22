@@ -11,7 +11,7 @@ const Bio = ({ dropdown, toggleDropdown, expand, collapse }) => {
 	);
 
 	return (
-		<div custom="story" className="bio" onClick={toggleDropdown}>
+		<div custom="story" className="section bio" onClick={toggleDropdown}>
 			<h3 custom="story" className="dropdown-text">
 				My story
 			</h3>
