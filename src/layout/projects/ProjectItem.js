@@ -11,6 +11,10 @@ const ProjectItem = ({ project }) => {
 				<h3>
 					<a href={liveLink}>{name}</a>
 				</h3>
+				<h3 className="tooltip" data-tip={tech}>
+					Tech
+					<span className="tooltiptext">{tech.join(', ')}</span>
+				</h3>
 				<a
 					href={`https://github.com/CodeAgony/${name}`}
 					alt={`to GitHub repository of the ${name} project`}
@@ -20,9 +24,6 @@ const ProjectItem = ({ project }) => {
 				</a>
 			</div>
 			<h4 className="project-descr">{description}</h4>
-			<div className="project-tech">
-				<p>Tech used: {tech.join(', ')}</p>
-			</div>
 			<img
 				src={screenUrl}
 				className={`project-scr border-${name} border-${name}-img `}
