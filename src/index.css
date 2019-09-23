@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(122, 126, 194), rgb(206, 212, 236)) repeat scroll 0% 0%;
   font-family: var(--font-narrative);
+  font-size: calc(15px + 0.5vw);
 }
 
 .appWrapper {
@@ -115,7 +116,6 @@ body {
 }
 
 .motto span {
-  font-size: 1rem;
   display: block;
   width: 100%;
   text-align: right;
@@ -124,7 +124,6 @@ body {
 /* Text */
 .narrative {
   margin: 0.5rem;
-  font-size: 1.1rem;
   font-weight: 400
 }
 
@@ -194,7 +193,6 @@ blockquote {
 .project-name a {
   padding: 0.3rem;
   font-family: var(--font-header);
-  font-size: 1.5rem;
 }
 
 .border-mapmybox {
@@ -332,13 +330,13 @@ blockquote {
 }
 
 /* Media queries */
-@media (max-width: 688px) { 
+@media (max-width: 765px) { 
   .motto-wrap { 
     display: none;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 435px) {
   .name {
     white-space: pre-wrap;
     font-size: 1.8rem;
@@ -346,14 +344,22 @@ blockquote {
   }
 
   .occupation {
-    font-size: 1rem;
     margin: auto;
     text-align: center;
   }
 
   .avatar {
     justify-self: center;
-    margin: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 403px) {
+  .name {font-size: calc(28px - 0.7vw)
+  } 
+
+  .occupation {
+    font-size: calc(19 - 0.7vw)
   }
 }
 
