@@ -253,15 +253,15 @@ blockquote {
 /* Tooltip */
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: flex;
   font-family: var(--font-header);
-  border-bottom: 2px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 2px dotted black;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 10rem;
+  width: 15rem;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   text-align: center;
@@ -278,17 +278,17 @@ blockquote {
 }
 
 .tooltip .tooltiptext {
-  width: 120px;
+  width: 20rem;
   top: 100%;
   left: 50%;
-  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  margin-left: -4rem;
 }
 
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
   bottom: 100%;  /* At the top of the tooltip */
-  left: 50%;
+  left: 15%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
