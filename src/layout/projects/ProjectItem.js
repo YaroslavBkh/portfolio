@@ -15,9 +15,11 @@ const ProjectItem = ({ project }) => {
 					<a className="project-descr tooltiptext">{description}</a>
 				</div>
 
-				<h3 className="tooltip" data-tip={tech}>
+				<h3 className="tooltip tooltip-tech" data-tip={tech}>
 					Tech
-					<span className="tooltiptext">{tech.join(', ')}</span>
+					<span className="tooltiptext tooltiptext-tech">
+						{tech.join(', ')}
+					</span>
 				</h3>
 				<a
 					href={`https://github.com/CodeAgony/${name}`}
