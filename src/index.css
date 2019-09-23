@@ -170,6 +170,7 @@ blockquote {
   margin: 0.5rem 0 0.3rem;
   font-family: var(--font-header);
   cursor: pointer;
+  flex: 0 100%;
 }
 
 /* Projects */
@@ -290,6 +291,34 @@ blockquote {
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+}
+
+/* Techlist */
+.techlist {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.techlist div {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.techlist-header {
+  margin: 0.3rem;
+}
+
+.techlist li {
+  font-family: var(--font-listing);
+}
+
+.techlist-item {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(163, 165, 197), rgb(255, 255, 255)) repeat scroll 0% 0%;
+  border: 3px transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* Animation */

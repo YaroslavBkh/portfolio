@@ -58,8 +58,8 @@ function App() {
 			<Banner />
 			<Bio {...props} />
 			<Projects {...props} />
-			{/*<Tech />
-			<Footer /> */}
+			<Tech />
+			{/* <Footer />  */}
 		</div>
 	);
 }
