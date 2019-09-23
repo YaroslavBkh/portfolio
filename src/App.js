@@ -11,7 +11,7 @@ import Footer from './layout/Footer';
 function App() {
 	const [dropdown, setDropdown] = useState({
 		story: false,
-		experience: false,
+		tech: false,
 		projects: false
 	});
 
@@ -20,6 +20,10 @@ function App() {
 		// toggle corresponding value in state to eventually
 		// toggle target's visibility
 		const togglable = event.target.attributes.custom;
+
+		// Could't find a good way to turn string string value
+		// into dot notation to keep it DRY.
+		// Swith will have to do for now
 		const toggle = togglable => {
 			switch (togglable.value) {
 				case 'story':
@@ -27,10 +31,10 @@ function App() {
 						? setDropdown({ ...dropdown, story: false })
 						: setDropdown({ ...dropdown, story: true });
 					break;
-				case 'experience':
-					dropdown.experience
-						? setDropdown({ ...dropdown, experience: false })
-						: setDropdown({ ...dropdown, experience: true });
+				case 'tech':
+					dropdown.tech
+						? setDropdown({ ...dropdown, tech: false })
+						: setDropdown({ ...dropdown, tech: true });
 					break;
 				case 'projects':
 					dropdown.projects
@@ -58,8 +62,8 @@ function App() {
 			<Banner />
 			<Bio {...props} />
 			<Projects {...props} />
-			{/*<Tech />
-			<Footer /> */}
+			<Tech {...props} />
+			{/* <Footer />  */}
 		</div>
 	);
 }

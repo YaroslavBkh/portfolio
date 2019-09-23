@@ -8,9 +8,13 @@ const ProjectItem = ({ project }) => {
 		<div className="project-item">
 			{/* Set border color based on project name */}
 			<div className={`project-name border-${name}`}>
-				<h3>
-					<a href={liveLink}>{name}</a>
-				</h3>
+				<div className="tooltip">
+					<h3>
+						<a href={liveLink}>{name}</a>
+					</h3>
+					<a className="project-descr tooltiptext">{description}</a>
+				</div>
+
 				<h3 className="tooltip" data-tip={tech}>
 					Tech
 					<span className="tooltiptext">{tech.join(', ')}</span>
@@ -23,7 +27,6 @@ const ProjectItem = ({ project }) => {
 					GitHub
 				</a>
 			</div>
-			<h4 className="project-descr">{description}</h4>
 			<img
 				src={screenUrl}
 				className={`project-scr border-${name} border-${name}-img `}
