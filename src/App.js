@@ -63,7 +63,7 @@ function App() {
 			<Bio {...props} />
 			<Projects {...props} />
 			<Tech {...props} />
-			{/* <Footer />  */}
+			<Footer />
 		</div>
 	);
 }

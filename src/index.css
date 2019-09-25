@@ -22,7 +22,7 @@ body {
 }
 
 .appWrapper {
-  display: flex;
+   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -142,8 +142,6 @@ body {
  .section {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  flex-wrap: wrap;
   border: 3px solid white;
   border-radius: 0 0 10px 10px;
 } 
@@ -323,6 +321,31 @@ blockquote {
   border-top-right-radius: 10px;
 }
 
+/* Footer */
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.portfolio-repo {
+  align-self: baseline;
+  margin: auto 0;
+  margin-left: 1rem;
+}
+
+.footer-icon {
+  width: calc(1rem+1vw);
+}
+
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.contacts li {
+  display: inline;
+}
 /* Animation */
 @keyframes typing {
   from { width: 0 }
