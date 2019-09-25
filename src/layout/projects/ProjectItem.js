@@ -9,25 +9,27 @@ const ProjectItem = ({ project }) => {
 			{/* Set border color based on project name */}
 			<div className={`project-name border-${name}`}>
 				<div className="tooltip">
-					<h3>
+					<h4>
 						<a href={liveLink}>{name}</a>
-					</h3>
+					</h4>
 					<a className="project-descr tooltiptext">{description}</a>
 				</div>
 
-				<h3 className="tooltip tooltip-tech" data-tip={tech}>
+				<h4 className="tooltip tooltip-tech" data-tip={tech}>
 					Tech
 					<span className="tooltiptext tooltiptext-tech">
 						{tech.join(', ')}
 					</span>
-				</h3>
-				<a
-					href={`https://github.com/CodeAgony/${name}`}
-					alt={`to GitHub repository of the ${name} project`}
-					className="project-github"
-				>
-					GitHub
-				</a>
+				</h4>
+				<h4>
+					<a
+						href={`https://github.com/CodeAgony/${name}`}
+						alt={`to GitHub repository of the ${name} project`}
+						className="project-github"
+					>
+						GitHub
+					</a>
+				</h4>
 			</div>
 			<img
 				src={screenUrl}
