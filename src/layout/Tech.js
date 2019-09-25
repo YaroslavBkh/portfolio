@@ -11,8 +11,8 @@ const Tech = ({ dropdown, toggleDropdown, expand, collapse }) => {
 	);
 
 	return (
-		<div custom="tech" className="section" onClick={toggleDropdown}>
-			<h3 custom="tech" className="dropdown-text">
+		<div className="section" onClick={toggleDropdown} custom="tech">
+			<h3 className="dropdown-text" custom="tech">
 				How I do things
 			</h3>
 			{!dropdown.tech && controls}

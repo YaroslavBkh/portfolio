@@ -14,11 +14,12 @@ const Projects = ({ dropdown, toggleDropdown, expand, collapse }) => {
 
 	return (
 		<div
-			custom="projects"
 			className="section projects"
 			onClick={toggleDropdown}
+			id="projects"
+			custom="projects"
 		>
-			<h3 custom="projects" className="dropdown-text">
+			<h3 className="dropdown-text" custom="projects">
 				Things I have built so far
 			</h3>
 			{!dropdown.projects && controls}

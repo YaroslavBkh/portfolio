@@ -4,10 +4,18 @@ const Navbar = () => {
 	return (
 		<div className="navbar">
 			<ul>
-				<li>CodeAgony</li>
-				<li>Bio</li>
-				<li>Projects</li>
-				<li>Hire</li>
+				<li>
+					<a href="#">CodeAgony</a>{' '}
+				</li>
+				<li>
+					<a href="#bio">Bio</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>{' '}
+				</li>
+				<li>
+					<a href="#footer">Hire</a>{' '}
+				</li>
 			</ul>
 		</div>
 	);
