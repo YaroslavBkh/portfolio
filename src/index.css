@@ -44,7 +44,7 @@ body {
 .appWrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 /* Navbar */
@@ -191,11 +191,6 @@ blockquote {
 }
 
 /* Projects */
-/* .projects {
-  display: grid;
-  grid-template-columns: minmax(20rem, 1fr) ;
-  grid-template-rows: auto ;
-} */
 
 .project-name {
   display: flex;
@@ -354,7 +349,7 @@ blockquote {
 }
 
 .footer-icon {
-  width: calc(1rem+1vw);
+  width: calc(16px + 5vw);
 }
 
 .contacts {
