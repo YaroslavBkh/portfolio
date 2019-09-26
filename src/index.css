@@ -26,30 +26,45 @@ ul {
 
 body {
   min-height: 100vh;
+  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(rgb(122, 126, 194), rgb(206, 212, 236)) repeat scroll 0% 0%;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(122, 126, 194), rgb(206, 212, 236)) repeat scroll 0% 0%;
   font-family: var(--font-narrative);
   font-size: calc(15px + 0.5vw);
 }
 
 .appWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* flex-wrap: wrap; */
 }
 
 /* Navbar */
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   font-family: 'Exo 2', sans-serif; 
+  position: -webkit-sticky; 
   position: sticky;
   top: 0;
   background: -webkit-linear-gradient(top, rgba(61, 74, 194) 0%, rgba(34,126,229,0.87) 95%, rgba(32,124,229,0.87) 50%);
 }
 
 .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
   color: whitesmoke
 }
 
@@ -64,14 +79,21 @@ body {
 
 /* Banner */
 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .avatar {
-  flex: 0 1 10rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10rem;
+          flex: 0 1 10rem;
   max-width: 10rem;
   border: 3px solid whitesmoke;
   border-bottom: 0;
@@ -83,17 +105,29 @@ body {
 }
 
 .intro {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  flex: 2 1 35%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 35%;
+          flex: 2 1 35%;
   min-width: 14rem;
 }
 
 .name {
-  flex: 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 100%;
+          flex: 0 100%;
   padding: 0 1rem 0 1rem;
   white-space: nowrap;
   font-family: var(--font-header);
@@ -101,27 +135,43 @@ body {
 
 .occupation {
   display: inline;
-  flex: 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 100%;
+          flex: 0 100%;
   padding: 0 1rem 0 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .motto-wrap {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 auto;
+          flex: 0 auto;
   padding: 0 1rem 0 1rem;
 }
 
 .motto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-family: 'Source Code Pro', monospace;
   line-height: 1.5;
   overflow: hidden; 
   white-space: nowrap; 
-  animation: 
+  -webkit-animation: 
+    typing 3.5s steps(40, end); 
+          animation: 
     typing 3.5s steps(40, end)
 }
 
@@ -150,8 +200,13 @@ body {
 
 /* Bio */
  .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 3px solid white;
   border-radius: 0 0 10px 10px;
 } 
@@ -167,7 +222,9 @@ blockquote {
 /* Controls */
 .toggle-icon {
   width: 1rem;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-bottom: 0.2rem;
   cursor: pointer;
 }
@@ -177,15 +234,23 @@ blockquote {
   margin: 0.5rem 0 0.3rem;
   font-family: var(--font-header);
   cursor: pointer;
-  flex: 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 100%;
+          flex: 0 100%;
 }
 
 /* Projects */
 
 .project-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   grid-area: name;
   background-color: whitesmoke;
   border: 3px solid #6666ff;
@@ -236,9 +301,12 @@ blockquote {
 }
 
 .project-item {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto ;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto ;
+      grid-template-rows: auto ;
   grid-template-areas: 
     "name name"
     "scr scr"
@@ -256,6 +324,8 @@ blockquote {
 /* Tooltip */
 .tooltip {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: var(--font-header);
   border-bottom: 2px dotted black;
@@ -300,13 +370,20 @@ blockquote {
 
 /* Techlist */
 .techlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .techlist div {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   text-align: center;
   margin: 0.5rem;
 }
@@ -320,6 +397,7 @@ blockquote {
 }
 
 .techlist-item {
+  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(rgb(163, 165, 197), transparent) repeat scroll 0% 0%;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(163, 165, 197), transparent) repeat scroll 0% 0%;
   border: 3px transparent;
   border-top-left-radius: 10px;
@@ -328,12 +406,17 @@ blockquote {
 
 /* Footer */
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .portfolio-repo {
-  align-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   margin: auto 0;
   margin-left: 1rem;
 }
@@ -343,8 +426,12 @@ blockquote {
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-left: auto;
 }
 
@@ -352,6 +439,10 @@ blockquote {
   display: inline;
 }
 /* Animation */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
