@@ -12,9 +12,8 @@ const ProjectItem = ({ project }) => {
 					<h4>
 						<a href={liveLink}>{name}</a>
 					</h4>
-					<a className="project-descr tooltiptext">{description}</a>
+					<span className="project-descr tooltiptext">{description}</span>
 				</div>
-
 				<h4 className="tooltip tooltip-tech" data-tip={tech}>
 					Tech
 					<span className="tooltiptext tooltiptext-tech">

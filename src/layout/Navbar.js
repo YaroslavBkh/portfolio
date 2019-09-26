@@ -2,10 +2,10 @@ import React from 'react';
 
 const Navbar = () => {
 	return (
-		<div className="navbar">
+		<div className="navbar" id="navbar">
 			<ul>
 				<li>
-					<a href="#">CodeAgony</a>{' '}
+					<a href="#navbar">CodeAgony</a>{' '}
 				</li>
 				<li>
 					<a href="#bio">Bio</a>
