@@ -16,16 +16,6 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
-
- /* a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-} */
-
-
 a:hover {
   text-decoration: underline;
 }
@@ -349,7 +339,7 @@ blockquote {
 }
 
 .footer-icon {
-  width: calc(16px + 5vw);
+  width: calc(16px + 2vw);
 }
 
 .contacts {
@@ -409,6 +399,10 @@ blockquote {
 
   .occupation {
     font-size: calc(19 - 0.7vw)
+  }
+
+  .footer-icon {
+    width: calc(16px + 5vw);
   }
 }
 
