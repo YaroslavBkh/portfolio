@@ -216,7 +216,8 @@ body {
 }
 
 blockquote {
-  line-height: 1.1;
+  line-height: 1.4;
+  padding: 1rem;
 }
 
 /* Controls */
