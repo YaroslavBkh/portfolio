@@ -64,14 +64,13 @@ const Bio = ({ dropdown, toggleDropdown, expand, collapse }) => {
 							proud of myself. Throughout the journey, I've tried to keep track
 							of recent changes in technologies I use, which led to the need to
 							recently re-learn React to put the hooks functionality under my
-							belt.
+							belt. Honestly, I feel lucky to have chosen 2018 as the year to
+							start. ES2017 with all the good stuff, embracing Node as a backend
+							platform even further with MERN; Flexbox and Grid in full swing,
+							mobile-friendly development and many great trends I might have
+							missed. While adopting those, I try to keep basic principles in
+							mind, such as:
 						</p>
-						Honestly, I feel lucky to have chosen 2018 as the year to start.
-						ES2017 with all the good stuff, embracing Node as a backend platform
-						even further with MERN; Flexbox and Grid in full swing,
-						mobile-friendly development and many great trends I might have
-						missed. While adopting those, I try to keep basic principles in
-						mind, such as:
 						<blockquote>
 							<ul>
 								<li>
