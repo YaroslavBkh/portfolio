@@ -40,7 +40,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* flex-wrap: wrap; */
+  width: 70vw;
+  margin: auto;
 }
 
 /* Navbar */
