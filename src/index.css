@@ -26,8 +26,6 @@ ul {
 
 body {
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(rgb(122, 126, 194), rgb(206, 212, 236)) repeat scroll 0% 0%;
-  background: rgba(0, 0, 0, 0) linear-gradient(rgb(122, 126, 194), rgb(206, 212, 236)) repeat scroll 0% 0%;
   font-family: var(--font-narrative);
   font-size: calc(15px + 0.5vw);
 }
