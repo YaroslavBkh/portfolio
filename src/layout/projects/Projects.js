@@ -19,7 +19,7 @@ const Projects = ({ dropdown, toggleDropdown, expand, collapse }) => {
 			id="projects"
 			custom="projects"
 		>
-			<h3 className="dropdown-text" custom="projects">
+			<h3 className="dropdown-text focused" custom="projects">
 				Things I have built so far
 			</h3>
 			{!dropdown.projects && controls}

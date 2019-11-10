@@ -60,9 +60,11 @@ function App() {
 		<div className="appWrapper">
 			<Navbar />
 			<Banner />
-			<Bio {...props} />
-			<Projects {...props} />
-			<Tech {...props} />
+			<div className="content">
+				<Bio {...props} />
+				<Projects {...props} />
+				<Tech {...props} />
+			</div>
 			<Footer />
 		</div>
 	);

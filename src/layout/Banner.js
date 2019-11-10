@@ -10,7 +10,7 @@ const Banner = () => {
 				/>
 			</div>
 			<div className="intro">
-				<h1 className="name">Yaroslav Bukhta</h1>
+				<h1 className="name focused">Yaroslav Bukhta</h1>
 				<h3 className="occupation">
 					Aspiring web developer, enthusiastic problem-solver, relentless
 					div-flinger

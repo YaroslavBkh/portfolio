@@ -12,7 +12,7 @@ const Tech = ({ dropdown, toggleDropdown, expand, collapse }) => {
 
 	return (
 		<div className="section" onClick={toggleDropdown} custom="tech">
-			<h3 className="dropdown-text" custom="tech">
+			<h3 className="dropdown-text focused" custom="tech">
 				How I do things
 			</h3>
 			{!dropdown.tech && controls}
