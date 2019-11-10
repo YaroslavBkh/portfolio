@@ -458,11 +458,13 @@ blockquote {
 }
 
 /* Media queries */
-@media (max-width: 765px) { 
+@media (max-width: 1200px) { 
   .motto-wrap { 
     display: none;
   }
+}
 
+@media (max-width: 765px) { 
   /* Responsive tooltip positioning */
   .tooltip-tech .tooltiptext-tech {
     left: 60%;
@@ -475,7 +477,7 @@ blockquote {
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 580px) {
   .name {
     white-space: pre-wrap;
     font-size: 1.8rem;
@@ -498,7 +500,7 @@ blockquote {
   }
 }
 
-@media (max-width: 403px) {
+@media (max-width: 703px) {
   .name {font-size: calc(28px - 0.7vw) 
   } 
 
@@ -517,7 +519,10 @@ blockquote {
   }
 
   .avatar {
-    border: 0;
     margin-top: 0.6rem;
+  }
+
+  .intro {
+    text-align: center;
   }
 }
