@@ -20,6 +20,11 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Focus */
+.focused {
+  color: rgb(27, 61, 228);
+}
+
 ul {
   list-style-type: none;
 }

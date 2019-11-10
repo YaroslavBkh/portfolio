@@ -17,7 +17,7 @@ const Bio = ({ dropdown, toggleDropdown, expand, collapse }) => {
 			id="bio"
 			custom="story"
 		>
-			<h3 className="dropdown-text" custom="story">
+			<h3 className="dropdown-text focused" custom="story">
 				My story
 			</h3>
 			{!dropdown.story && controls}
