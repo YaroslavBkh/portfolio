@@ -486,10 +486,15 @@ blockquote {
     justify-self: center;
     margin: 0 auto;
   }
+
+  .appWrapper {
+    width: 100vw;
+    margin: 0;
+  }
 }
 
 @media (max-width: 403px) {
-  .name {font-size: calc(28px - 0.7vw)
+  .name {font-size: calc(28px - 0.7vw) 
   } 
 
   .occupation {
@@ -505,6 +510,7 @@ blockquote {
   .name {
     white-space: pre-wrap;
   }
+
   .avatar {
     border: 0;
     margin-top: 0.6rem;
