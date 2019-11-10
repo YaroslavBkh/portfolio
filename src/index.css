@@ -99,8 +99,6 @@ body {
       -ms-flex: 0 1 10rem;
           flex: 0 1 10rem;
   max-width: 10rem;
-  border: 3px solid whitesmoke;
-  border-bottom: 0;
 }
 
 .avatar img {
