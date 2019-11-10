@@ -29,6 +29,7 @@ ul {
   list-style-type: none;
 }
 
+/* Layout */
 body {
   min-height: 100vh;
   font-family: var(--font-narrative);
@@ -44,7 +45,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 70vw;
+  min-height: 100vh;
   margin: auto;
+}
+
+.content {
+  margin: auto 0 auto 0;
 }
 
 /* Navbar */
@@ -412,8 +418,9 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-top: auto;
 }
 
 .portfolio-repo {
