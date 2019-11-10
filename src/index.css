@@ -169,9 +169,9 @@ body {
   overflow: hidden; 
   white-space: nowrap; 
   -webkit-animation: 
-    typing 3.5s steps(40, end); 
+    typing 1.5s steps(40, end); 
           animation: 
-    typing 3.5s steps(40, end)
+    typing 1.5s steps(40, end)
 }
 
 .motto span {
